@@ -1,7 +1,11 @@
+import { useRoutes } from 'react-router-dom';
+
+import routes from './router';
+
 function App() {
   return (
     <>
-      <div className="App">Welcome</div>
+      <div className="App">{useRoutes(routes)}</div>
     </>
   );
 }
